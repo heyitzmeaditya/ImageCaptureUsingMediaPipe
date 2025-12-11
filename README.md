@@ -268,8 +268,6 @@ database_dumps/mongodb.json
 <img width="940" height="724" alt="image" src="https://github.com/user-attachments/assets/fef876c2-8d4e-46e1-a725-773491ebff67" />
 
 
-# ✅ Project Completed
-
 This project includes:
 
 ✔ Full Node.js Backend
