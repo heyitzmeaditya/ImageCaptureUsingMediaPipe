@@ -169,14 +169,13 @@ Body → form-data:
 | ----- | ---- | -------------- |
 | image | File | yourimage.jpeg |
 
-### ✔ Expected Output (Example)
+###  Expected Output (Example)
 
 ```json
 {
   "total_keypoints": 33,
   "keypoints": [
     { "id": 0, "x": 0.39, "y": 0.57, "z": -0.72, "visibility": 0.70 },
-    ...
   ]
 }
 ```
