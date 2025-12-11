@@ -270,8 +270,8 @@ database_dumps/mongodb.json
 
 This project includes:
 
-✔ Full Node.js Backend
-✔ Python MediaPipe Pose Model
-✔ Dual Database System
-✔ Auto Backup with Email
-✔ Full API + Documentation
+1. Full Node.js Backend
+2. Python MediaPipe Pose Model
+3. Dual Database System
+4. Auto Backup with Email
+5. Full API + Documentation
