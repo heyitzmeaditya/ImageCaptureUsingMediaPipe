@@ -1,11 +1,11 @@
-# 🧠 SMARTAN – Pose Extraction & Keypoint Storage System
+# SMARTAN – Pose Extraction & Keypoint Storage System
 
 SMARTAN is a full-stack backend system that extracts human pose keypoints from images using **Python + MediaPipe**, sends them to a **Node.js backend**, and stores them in both **MongoDB** (image metadata) and **MySQL** (structured pose data).
 It also includes a **daily automated backup system** using Node-Cron + Email delivery.
 
 ---
 
-## 🚀 Features
+## Features
 
 * Upload an image → extract pose keypoints (33 body keypoints)
 * Python Mediapipe service processes the image
@@ -20,7 +20,7 @@ It also includes a **daily automated backup system** using Node-Cron + Email del
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### **Backend**
 
@@ -40,7 +40,7 @@ It also includes a **daily automated backup system** using Node-Cron + Email del
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 SMARTAN/
@@ -75,11 +75,11 @@ SMARTAN/
 
 ---
 
-# ⚙️ Setup Instructions
+#  Setup Instructions
 
 ---
 
-## 1️⃣ Clone the Repository
+## Clone the Repository
 
 ```
 git clone https://github.com/yourusername/SMARTAN.git
@@ -88,7 +88,7 @@ cd SMARTAN/backend
 
 ---
 
-## 2️⃣ Install Node Dependencies
+## Install Node Dependencies
 
 ```
 npm install
@@ -96,7 +96,7 @@ npm install
 
 ---
 
-## 3️⃣ Setup Python Virtual Environment
+##  Setup Python Virtual Environment
 
 ```
 cd mediapipe-service
@@ -107,7 +107,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Create `.env` File
+##  Create `.env` File
 
 Inside `/backend/` create a `.env` file:
 
@@ -117,11 +117,11 @@ EMAIL_USER=yourgmail@gmail.com
 EMAIL_PASS=your-app-password
 ```
 
-⚠️ Use Gmail **App Password**, not your login password.
+ Use Gmail **App Password**, not your login password.
 
 ---
 
-## 5️⃣ Setup MySQL Database
+## Setup MySQL Database
 
 Run in MySQL console:
 
@@ -142,7 +142,7 @@ A `poses` table will be created automatically by Sequelize:
 
 ---
 
-## 6️⃣ Start Node.js Backend
+## Start Node.js Backend
 
 ```
 cd backend
@@ -152,14 +152,14 @@ nodemon src/index.js
 Output should show:
 
 ```
-✅ Server started on port 5000
-✅ MongoDB Connected Successfully
-✅ MySQL Connected Successfully
+ Server started on port 5000
+ MongoDB Connected Successfully
+ MySQL Connected Successfully
 ```
 
 ---
 
-## 7️⃣ Test Pose Extraction API (Postman)
+## Test Pose Extraction API (Postman)
 
 ### **POST** `/extract-pose`
 
@@ -183,7 +183,7 @@ Body → form-data:
 
 ---
 
-# 🤖 Python Pose Extractor (MediaPipe)
+#  Python Pose Extractor (MediaPipe)
 
 ```
 python pose_extractor.py input.jpg
@@ -202,14 +202,14 @@ Use this screenshot in README.
 
 ---
 
-# ⏰ Daily Cron Backup (2 AM Auto Backup)
+#  Daily Cron Backup (2 AM Auto Backup)
 
 ### The backup includes:
 
-✔ MySQL dump
-✔ MongoDB JSON export
-✔ Zipped
-✔ E-mailed automatically
+MySQL dump
+MongoDB JSON export
+Zipped
+E-mailed automatically
 
 ### Cron Schedule
 
@@ -232,7 +232,7 @@ Attachment:
 
 ---
 
-# 📨 Email Backup Setup
+#  Email Backup Setup
 
 Uses Nodemailer:
 
@@ -250,7 +250,7 @@ Make sure 2-Step Verification is ON and App Password is generated.
 
 ---
 
-# 🗄 Sample DB Dumps
+# Sample DB Dumps
 
 Include inside:
 
@@ -260,7 +260,7 @@ database_dumps/mongodb.json
 ```
 ---
 
-# 🧪 Example Screenshots to Add in README
+# Example Screenshots to Add in README
 <img width="940" height="442" alt="image" src="https://github.com/user-attachments/assets/8d787e1f-23f1-4d6c-b7ac-d6e093cb8502" />
 <img width="940" height="239" alt="image" src="https://github.com/user-attachments/assets/a4beb5a5-6a34-44f7-87e1-01b5ab59ab6b" />
 <img width="940" height="908" alt="image" src="https://github.com/user-attachments/assets/bdd94ed8-f3a7-494b-9577-37dc423456a7" />
