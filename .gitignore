@@ -1,0 +1,16 @@
+# Node
+backend/node_modules
+backend/temp
+backend/uploads
+backend/.env
+
+# Python
+mediapipe-service/venv
+mediapipe-service/__pycache__
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
